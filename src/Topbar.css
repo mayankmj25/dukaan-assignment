@@ -1,0 +1,39 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF; /* Replace with actual color */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.topbar-section {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-logo {
+  /* Add styles for logo */
+}
+
+.topbar-dropdown {
+  /* Add styles for dropdown menu */
+}
+
+.dropdown-arrow {
+  /* Style the dropdown arrow */
+}
+
+.topbar-link {
+  margin: 0 15px; /* Adjust spacing as needed */
+  /* Add more styles for links */
+}
+
+.topbar-search {
+  /* Style the search input */
+}
+
+.topbar-icons {
+  /* Add styles for the icons container */
+}
+
+/* You can add more specific styles for each element to match the design */
