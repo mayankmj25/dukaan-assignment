@@ -1,4 +1,6 @@
 .transactions-table-container {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .transactions-header {
@@ -31,10 +33,54 @@
   margin-bottom: 12px;
 }
 
-.table-filters input {
-    border-radius: 4px;
-    border: 1px solid var(--Black-85, #D9D9D9);
-    background: var(--Black-100, #FFF);
+.table-filters .searchbar {
+display: flex;
+padding: 10px 16px;
+align-items: center;
+gap: 8px;
+/* flex: 1 0 0; */
+border-radius: 4px;
+border: 1px solid var(--Black-85, #D9D9D9);
+background: var(--Black-100, #FFF);
+}
+
+.table-filters .searchbar input {
+  color: var(--Black-60, #999);
+
+/* Body 2/Regular */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+border: none;
+}
+
+.table-filters-btns {
+  display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 12px;
+}
+
+.downloadbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+border: 1px solid var(--Black-85, #D9D9D9);
+width: 36px;
+height: 36px;
+}
+
+.table-filters .sort {
+  display: flex;
+padding: 6px 12px;
+align-items: center;
+gap: 6px;
+border-radius: 4px;
+border: 1px solid var(--Black-85, #D9D9D9);
+background: var(--Black-100, #FFF);
 }
 
 .transactions-table {
@@ -46,6 +92,7 @@ thead {
   border-radius: 4px;
   background: #f2f2f2;
   padding: 10px 12px;
+  gap: 40px;
 }
 
 th {
@@ -55,18 +102,18 @@ th {
   font-style: normal;
   font-weight: 500;
   line-height: 20px; /* 142.857% */
+  padding: 10px 12px;
 }
 
-th {
+/* th {
   padding: 10px 12px;
   color: var(--Black-12, #1a181e);
-  /* Body 2/Regular */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
-}
+  line-height: 20px; 
+} */
 
 #blue-color {
   color: var(--Primary-Blue, #146eb4);
@@ -81,6 +128,14 @@ th {
 
 td {
   padding: 14px 12px;
+  color: var(--Black-12, #1A181E);
+
+/* Body 2/Regular */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
 }
 
 .transactions-table th,
@@ -91,8 +146,103 @@ td {
 
 .pagination {
   display: flex;
+  align-self: center;
   justify-content: center; /* Center the pagination buttons */
-  margin-top: 16px; /* Adjust margin as needed */
+  gap: 24px;
+  margin-top: 24px;
 }
 
-/* Style your buttons and inputs as needed */
+.prevbtn {
+  display: flex;
+padding: 6px 12px 6px 6px;
+justify-content: center;
+align-items: center;
+gap: 6px;
+border-radius: 4px;
+border: 1px solid var(--Black-85, #D9D9D9);
+background: var(--Black-100, #FFF);
+}
+
+.prevtext {
+  color: var(--Black-30, #4D4D4D);
+text-align: center;
+
+/* Body 2/Medium */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}
+
+.nextbtn {
+  display: flex;
+padding: 6px 6px 6px 12px;
+justify-content: center;
+align-items: center;
+gap: 6px;
+border-radius: 4px;
+border: 1px solid var(--Black-85, #D9D9D9);
+background: var(--Black-100, #FFF);
+}
+
+.nexttext {
+  color: var(--Black-30, #4D4D4D);
+text-align: center;
+
+/* Body 2/Medium */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}
+
+.numbers {
+  display: flex;
+align-items: flex-start;
+gap: var(--Spacing-spacing-04, 8px);
+}
+
+.numbers div {
+  display: flex;
+width: 28px;
+height: 28px;
+padding: 6px 8px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 4px;
+color: var(--Black-30, #4D4D4D);
+text-align: center;
+
+/* Body 2/Regular */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+
+#selected {
+  display: flex;
+width: 28px;
+height: 28px;
+padding: 6px 8px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 6px;
+border-radius: 4px;
+background: var(--Primary-Blue, #146EB4);
+color: var(--Black-100, #FFF);
+text-align: center;
+
+/* Body 2/Medium */
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}

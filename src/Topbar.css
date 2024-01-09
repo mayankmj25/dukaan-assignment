@@ -1,39 +1,76 @@
 .topbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FFF; /* Replace with actual color */
-  padding: 10px; /* Adjust padding as needed */
+padding: 12px 32px;
+align-items: center;
+gap: 16px;
+border-bottom: 1px solid #D9D9D9;
+background: #FFF;
+margin-top: 34px;
 }
 
 .topbar-section {
   display: flex;
-  align-items: center;
+align-items: center;
+gap: 16px;
+flex: 1 0 0;
 }
 
-.topbar-logo {
-  /* Add styles for logo */
+#payment {
+  color: #1A181E;
+
+/* Body 1/Regular */
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 146.667% */
 }
 
-.topbar-dropdown {
-  /* Add styles for dropdown menu */
+.howitworkstab {
+  display: flex;
+align-items: center;
+gap: 6px;
 }
 
-.dropdown-arrow {
-  /* Style the dropdown arrow */
-}
+#howitworks {
+  color: #4D4D4D;
 
-.topbar-link {
-  margin: 0 15px; /* Adjust spacing as needed */
-  /* Add more styles for links */
+/* Caption/Regular */
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
 }
 
 .topbar-search {
-  /* Style the search input */
+  display: flex;
+  max-width: 400px;
+  padding: 9px 16px;
+  align-items: center;
+  gap: var(--Spacing-spacing-04, 8px);
+  flex-shrink: 0;
+  align-self: stretch;
+border-radius: 6px;
+background: #F2F2F2;
+}
+
+.topbar-search input {
+  color: #808080;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 146.667% */
+width: 300px;
+border: #F2F2F2;
+padding: 0;
 }
 
 .topbar-icons {
-  /* Add styles for the icons container */
+  display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+gap: var(--Spacing-spacing-04, 8px);
+flex: 1 0 0;
 }
-
-/* You can add more specific styles for each element to match the design */

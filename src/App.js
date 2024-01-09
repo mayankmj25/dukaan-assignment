@@ -11,7 +11,7 @@ function App() {
       <Sidebar />
       <div className="contentContainer">
         <Topbar />
-        <div style={{margin: 32}}>
+        <div style={{marginLeft: 32, marginRight: 32}}>
         <Overview />
         <TransactionsTable />
         </div>

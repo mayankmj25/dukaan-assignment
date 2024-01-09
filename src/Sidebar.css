@@ -1,0 +1,130 @@
+.sidebar {
+  display: flex;
+  width: 224px;
+  padding: 16px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: var(--Secondary-Navbar, #1e2640);
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 24px; */
+  flex: 1 0 0;
+}
+
+.sidebar-top-section {
+  display: flex;
+  width: 192px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+
+.menu-item {
+  display: flex;
+  width: 208px;
+  padding: 8px 16px;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 4px;
+}
+
+.menu-item-text {
+  color: var(--Black-100, #fff);
+
+  /* Body 2/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+#userImage {
+  border-radius: 4px;
+  background: lightgray 50% / contain no-repeat;
+  width: 39px;
+  height: 39px;
+}
+
+#username {
+  color: var(--Black-100, #fff);
+
+  /* Body 1/Medium */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 146.667% */
+  align-self: stretch;
+}
+
+#visitstore {
+  color: var(--Black-100, #fff);
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+  text-decoration-line: underline;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-bottom-section {
+  display: flex;
+  width: 192px;
+  padding: 6px 12px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  background: #353c53;
+}
+
+#availablecredits {
+  color: var(--Black-100, #fff);
+
+  /* Sub Body/Regular */
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+}
+
+#belowavailabletext {
+  color: var(--Black-100, #fff);
+
+  /* Sub Title/Medium */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+#creditIcon {
+  display: flex;
+  padding: 6px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 12px;
+}
